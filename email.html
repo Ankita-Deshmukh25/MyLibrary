@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+</head>
+<body>
+  <h3>Student Registration Form</h3>
+  <form onsubmit="return validate()">
+    First Name: 
+    <input type="text" id="fname" onmouseover="this.style.background='yellow'" onmouseout="this.style.background='white'"><br><br>
+    
+    Last Name: 
+    <input type="text" id="lname" onmouseover="this.style.background='yellow'" onmouseout="this.style.background='white'"><br><br>
+    
+    Email: 
+    <input type="text" id="email" onmouseover="this.style.background='yellow'" onmouseout="this.style.background='white'"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validate() {
+      var f = document.getElementById("fname").value.trim();
+      var l = document.getElementById("lname").value.trim();
+      var e = document.getElementById("email").value.trim();
+      
+      var letters = /^[A-Za-z]+$/;
+      var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      
+      if (f === "") {
+        alert("First name is required.");
+        return false;
+      }
+      if (!f.match(letters)) {
+        alert("First name must contain only letters.");
+        return false;
+      }
+      
+      if (l === "") {
+        alert("Last name is required.");
+        return false;
+      }
+      if (!l.match(letters)) {
+        alert("Last name must contain only letters.");
+        return false;
+      }
+      
+      if (e === "") {
+        alert("Email is required.");
+        return false;
+      }
+      if (!emailPattern.test(e)) {
+        alert("Enter a valid email.");
+        return false;
+      }
+      
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>

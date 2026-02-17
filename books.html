@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+            div{
+                display: flex;
+                gap: 20px;               
+               
+            }
+
+            img{
+                 height: 300px;
+                width: 300px;
+            }
+             header {
+      background-color:maroon;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    
+
+     nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a{
+        color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+   
+    .flex{
+      display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+    }
+
+    .flex img{
+      width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+ 
+    }
+
+    .flex img:hover{
+       transform: scale(0.7);
+    }
+    h1{
+      text-align: center;
+    }   
+    </style>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+    // When heading is clicked → go to historicalbooks.html
+    $(".histo").click(function() {
+        window.location.href = "historicalbooks.html";
+    });
+
+    // When any image inside .flex is clicked → go to historical.html
+    $(".flex img").css("cursor", "pointer").click(function() {
+        window.location.href = "historicalbooks.html";
+    });
+
+});
+</script>
+</head>
+<body>
+
+    <header>
+    <h1>MyLibrary</h1>
+    <p>Digital Tools for Academic Success</p>
+  </header>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Books</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <h1 class="histo" onclick="window.location.href='historicalbooks.html';">Historical Book</h1>
+ 
+  <div class="flex">
+   <img src="images/hist1.jpg">
+   <img src="images/hist2.jpg">
+   <img src="images/hist3.jpg">   
+   <img src="images/hist4.webp">
+
+   <img src="images/hist5.jpg">
+   <img src="images/hist6.jpg">
+   <img src="images/hist7.jpg">
+   <img src="images/hist14.jpg">
+
+   <img src="images/hist9.jpeg">
+   <img src="images/hist11.jpeg">
+   <img src="images/hist12.jpg">
+   <img src="images/hist13.jpg">
+   <img src="images/hist8.jpg">
+
+
+
+
+</div>
+
+<h1>Comicks Book</h1>
+<div class="flex">
+   <img src="images/comi1.jpg">
+   <img src="images/comi2.jpg">   
+   <img src="images/comi3.jpg">
+   
+   <img src="images/comi4.jpeg">
+   <img src="images/comi5.jpg">
+   <img src="images/comi6.jpg">
+   <img src="images/comi7.jpg">
+
+   <img src="images/comi8.avif">
+   <img src="images/comi9.webp">
+   <img src="images/comi11.jpg">
+   <img src="images/comi12.webp">
+
+   </div>
+    
+
+   <h1>Scince Book</h1>
+<div class="flex">
+   <img src="images/sc1.jpeg">
+   <img src="images/sc2.jpg">   
+   <img src="images/sc3.jpeg">
+   
+   <img src="images/sc4.jpeg">
+   <img src="images/sc5.jpeg">
+   <img src="images/sc8.jpeg">
+   <img src="images/sc11.jpeg">
+
+   <img src="images/sc14.jpeg">
+   <img src="images/sc13.jpeg">
+   <img src="images/sc12.jpg">
+   <img src="images/sc15.webp">
+   <img src="images/sc6.webp">
+   <img src="images/sc7.webp">
+
+   </div>
+
+    <h1>Story Book</h1>
+<div class="flex">
+   <img src="images/sto1.webp">
+   <img src="images/sto2.webp">   
+   <img src="images/sto3.webp">
+   <img src="images/sto15.webp">
+
+   
+   <img src="images/sto4.webp">
+   <img src="images/sto5.webp">
+   <img src="images/sto6.jpg">
+   <img src="images/sto7.webp">
+
+   <img src="images/sto9.webp">
+   <img src="images/sto10.webp">
+   <img src="images/sto11.webp">
+   <img src="images/sto12.webp">
+   <img src="images/sto13.webp">
+   <img src="images/sto14.webp">
+
+   </div>
+
+    <h1>Travel Book</h1>
+<div class="flex">
+   <img src="images/tr1.jpg">
+   <img src="images/tr2.jpg">   
+   <img src="images/tr3.webp">
+   
+   <img src="images/tr4.webp">
+   <img src="images/tr5.webp">
+   <img src="images/tr6.webp">
+   <img src="images/tr7.webp">
+
+   <img src="images/tr8.webp">
+   <img src="images/tr9.webp">
+   <img src="images/tr10.webp">
+   <img src="images/tr11.webp">
+   <img src="images/tr12.webp">
+   <img src="images/tr13.webp">
+   <img src="images/tr14.webp">
+   <img src="images/tr15.jpg">
+
+   </div>
+
+    <h1>Cook book</h1>
+<div class="flex">
+  
+   <img src="images/ki1.webp">  
+   <img src="images/ki2.webp">   
+   <img src="images/ki3.webp">
+   
+   <img src="images/ki4.webp">
+   <img src="images/ki5.webp">
+   <img src="images/ki6.webp">
+   <img src="images/ki8.webp">
+
+   <img src="images/ki9.webp">
+   <img src="images/ki10.webp">
+   <img src="images/ki11.webp">
+   <img src="images/ki12.webp">
+   <img src="images/ki13.webp">
+   <img src="images/ki14.webp">
+
+   </div>
+
+</body>
+</html>

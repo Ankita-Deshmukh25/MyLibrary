@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <style>
+         header {
+      background-color: maroon;
+      padding: 20px;
+      color: white;
+      text-align: center; 
+    }
+
+     nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a{
+        color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+      footer {
+      background-color: maroon;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;    
+      bottom: 0px; 
+      width: 100%;
+    }
+   h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Contact form styling */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; /* Extra space to avoid overlap with footer */
+}
+
+table {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 250px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 50px;
+  resize: vertical;
+}
+
+/* Submit button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+button[type="submit"]:hover {
+  background-color: #a30000;
+}
+    </style>
+    <script src="contact.js">
+    </script>
+</head>
+<body>
+  <header>
+    <h1>MyLibrary</h1>
+    <p>Digital Tools for Academic Success</p>
+  </header>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+    <a href="#">Contact</a>
+  </nav>
+<h2>Contact Us</h2>
+
+  <form>
+    <table>
+      <tr>
+          <td><label> Full Name</label></td>
+          <td><input type="text" name="name" id="name" ></td>
+          <td><span id="n1" style="color: red;"></span></td>
+      </tr>
+
+      <tr>
+          <td><label> Email</label></td>
+          <td><input type="email" name="mail" id="email" required></td>
+          <td><span id="n2" style="color: red;"></span></td>
+      </tr>
+
+      <tr>
+           <td><label>I would like to talk with someone about:</label></td>
+         <td><select required>
+            <option value="">Please select</option>
+            <option value="account">My Account</option>
+            <option value="card">get library card</option>
+            <option value="research">Research and Assitence</option>
+            <option value="feedback">Website Feedback</option>
+            <option value="general">General</option>
+          </select></td>
+          <td><span id="n3"></span></td>
+      </tr>
+
+      <tr>
+          <td><label>Library Card Number</label></td>
+          <td><input type="number" name="number" id="cardno" required></td>
+          <td><span id="n4" style="color: red;"></span></td>
+      </tr>
+
+            <tr>
+          <td><label>Please let us know your message:</label></td>
+          <td><textarea></textarea></td>
+          <td><span id="n5"></span></td>
+      </tr>
+   
+   <tr>
+    <td><button type="submit" onclick="display()">Submit From</button></td>
+   </tr>
+    
+    
+
+    </table>
+  </form>
+
+
+     <footer>
+    &copy; 2025 Welcome to My Library
+  </footer>
+
+ 
+</body>
+</html>

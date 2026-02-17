@@ -1,0 +1,92 @@
+ 
+   body{
+    background-image: url("images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   header {
+      background-color: maroon;
+      padding: 5px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1a1a2e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: yellowgreen;
+      
+    }
+
+   
+    div {
+      text-align: center;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #2e8b57;
+    }
+
+    p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color:maroon;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;    
+      bottom: 0px; 
+      width: 100%;
+    }
+    .flex{
+       display: flex;
+       gap: 20px;   
+       padding: 20px;      
+       justify-content: center;
+       flex-wrap: wrap; 
+        
+               
+    }
+    .flex img{
+        height: 200px;
+        width: 300px;
+        cursor: pointer;
+    }
+
+    .flex img:hover{
+      transform: scale(0.8);
+    }
+    
+    .main {
+      margin-right:5px ;
+      width: 90%;
+      height: 400px;
+      overflow: hidden;  
+            
+            
+
+.main vedio {
+  object-fit: cover;
+  border-radius: 10px;
+}
+    
+   
